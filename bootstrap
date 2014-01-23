@@ -1,0 +1,2 @@
+./stop-all && ./build && ./run && sleep 3 && ./login-container
+

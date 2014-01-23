@@ -1,0 +1,7 @@
+sh scripts/build.sh
+export LANG=en_US.UTF-8
+running=`ps axu|grep Rserve|awk '{print $2}'`
+echo Running processes: $running
+if [ -n "$running" ]; then kill $running; fi
+sleep 5
+conf/start
